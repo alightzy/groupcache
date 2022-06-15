@@ -5,6 +5,7 @@ import (
 	"log"
 	"sync"
 
+	"github.com/zcongjie/groupcache/api"
 	"github.com/zcongjie/groupcache/internal/pkg/singleflight"
 )
 
@@ -107,11 +108,16 @@ func (g *Group) load(key string) (value ByteView, err error) {
 }
 
 func (g *Group) getFromPeer(peer PeerGetter, key string) (ByteView, error) {
-	bytes, err := peer.Get(g.name, key)
+	req := &api.GetRequest{
+		Group: g.name,
+		Key:   key,
+	}
+	res := &api.GetResponse{}
+	err := peer.Get(req, res)
 	if err != nil {
 		return ByteView{}, err
 	}
-	return ByteView{b: bytes}, nil
+	return ByteView{b: res.Value}, nil
 }
 
 func (g *Group) getLocally(key string) (ByteView, error) {
