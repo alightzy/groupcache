@@ -9,9 +9,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/zcongjie/groupcache/api"
-	"github.com/zcongjie/groupcache/internal/pkg/cache"
-	"github.com/zcongjie/groupcache/internal/pkg/consistenthash"
+	"github.com/alightzy/groupcache/api"
+	"github.com/alightzy/groupcache/internal/pkg/cache"
+	"github.com/alightzy/groupcache/internal/pkg/consistenthash"
 	"google.golang.org/protobuf/proto"
 )
 

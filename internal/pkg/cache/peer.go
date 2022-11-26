@@ -1,6 +1,6 @@
 package cache
 
-import "github.com/zcongjie/groupcache/api"
+import "github.com/alightzy/groupcache/api"
 
 // PeerPicker is the interface that must be implemented to locate
 // the peer that owns a specific key.
