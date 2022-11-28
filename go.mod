@@ -1,4 +1,4 @@
-module github.com/alightzy/groupcache
+module github.com/aligntzy/groupcache
 
 go 1.18
 

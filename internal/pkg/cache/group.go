@@ -5,8 +5,8 @@ import (
 	"log"
 	"sync"
 
-	"github.com/alightzy/groupcache/api"
-	"github.com/alightzy/groupcache/internal/pkg/singleflight"
+	"github.com/aligntzy/groupcache/api"
+	"github.com/aligntzy/groupcache/internal/pkg/singleflight"
 )
 
 // A Getter loads data for a key.

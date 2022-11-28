@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/alightzy/groupcache/internal/pkg/cache"
+	"github.com/aligntzy/groupcache/internal/pkg/cache"
 )
 
 func TestServer(t *testing.T) {

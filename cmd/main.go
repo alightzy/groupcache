@@ -6,8 +6,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/alightzy/groupcache/internal/pkg/cache"
-	"github.com/alightzy/groupcache/internal/pkg/server"
+	"github.com/aligntzy/groupcache/internal/pkg/cache"
+	"github.com/aligntzy/groupcache/internal/pkg/server"
 )
 
 func createGroup() *cache.Group {

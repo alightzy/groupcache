@@ -3,7 +3,7 @@ package cache
 import (
 	"sync"
 
-	"github.com/alightzy/groupcache/internal/pkg/lru"
+	"github.com/aligntzy/groupcache/internal/pkg/lru"
 )
 
 // cache is a wrapper around an *lru.Cache that adds synchronization,

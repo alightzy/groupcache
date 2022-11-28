@@ -1,6 +1,6 @@
 package cache
 
-import "github.com/alightzy/groupcache/api"
+import "github.com/aligntzy/groupcache/api"
 
 // PeerPicker is the interface that must be implemented to locate
 // the peer that owns a specific key.
